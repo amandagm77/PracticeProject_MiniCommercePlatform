@@ -105,5 +105,34 @@
   {
     "product_name": "USB-C Cable"
   }
+],
+[
+  {
+    "stage": "unwind",
+    "input": "categories",
+    "description": "Separates each product's category array so each category can be counted individually."
+  },
+  {
+    "stage": "group",
+    "group_by": "category",
+    "calculate": {
+      "average_price": "average(pricing.current_price)"
+    },
+    "description": "Groups products by category and calculates the average price for each category."
+  },
+  {
+    "stage": "project",
+    "output_fields": {
+      "category": true,
+      "average_price": true
+    },
+    "description": "Controls which fields appear in the final result."
+  },
+  {
+    "stage": "sort",
+    "sort_by": "average_price",
+    "order": "descending",
+    "description": "Sorts the categories from highest average price to lowest."
+  }
 ]
 ]
