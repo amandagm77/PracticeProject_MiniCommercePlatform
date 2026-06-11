@@ -23,7 +23,7 @@
     "description": "A compact wireless mouse with USB receiver.",
     "categories": ["Electronics", "Accessories"],
     "pricing": {
-      "current_price": 24.99,
+      "current_price": 19.99,
       "currency": "USD"
     },
     "stock_quantity": 50,
@@ -80,5 +80,30 @@
       "length": "6 feet",
       "connector_type": "USB-C"
     }
+  },
+  {
+  "product_id": 6,
+  "product_name": "Webcam",
+  "categories": ["Electronics", "Accessories"],
+  "pricing": {
+    "current_price": 59.99,
+    "currency": "USD"
+  },
+  "stock_quantity": 25,
+  "attributes": {
+    "brand": "StreamView",
+    "resolution": "1080p"
   }
+},
+[
+  {
+    "product_name": "Wireless Mouse"
+  },
+  {
+    "product_name": "Keyboard"
+  },
+  {
+    "product_name": "USB-C Cable"
+  }
+]
 ]
